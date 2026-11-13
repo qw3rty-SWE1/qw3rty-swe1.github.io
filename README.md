@@ -37,7 +37,7 @@ Every "Play" button reads this value. While it is empty, those buttons appear di
 1. Put the file in `docs/` using a lowercase, hyphenated name, for example `docs/srs.pdf` or `docs/assignment-1.pdf`.
 2. In `index.html`, find the matching card or table row. A comment right above the disabled button holds the finished link. Replace the disabled `<a ... aria-disabled="true">` with that link.
 3. Change the `Coming soon` badge to `<span class="badge badge-live">Available</span>`, or remove it.
-4. For assignments, also replace `Description coming soon` with a short description.
+4. For a new assignment, copy an existing table row, then update its title, description, and link.
 
 Expected file names:
 
@@ -46,7 +46,10 @@ Expected file names:
 | SRS                | `docs/srs.pdf`                |
 | Presentation Notes | `docs/presentation-notes.pdf` |
 | Demo Video         | `docs/demo-video.mp4`, or a YouTube link |
-| Assignments 1–4    | `docs/assignment-1.pdf` through `docs/assignment-4.pdf` |
+| Project Requirements | `docs/project-requirements.pdf` |
+| Use Case Diagram   | `docs/use-case-diagram.png`   |
+| Class Diagram      | `docs/class-diagram.png`      |
+| Sequence Diagrams  | `docs/sequence-diagram-1.png`, `docs/sequence-diagram-2.png` |
 
 Keep large videos out of the repository. Upload them to YouTube (or similar) and link to them instead.
 

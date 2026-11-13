@@ -34,7 +34,7 @@
       <div class="container">
         <p class="eyebrow">A Software Engineering Course Project</p>
         <h1 id="hero-title" class="hero-title">qw3rty</h1>
-        <p class="hero-tagline">Race your friends by typing your way through math facts.</p>
+        <p class="hero-tagline">Race the clock by typing your way through 4th grade math.</p>
         <div class="menu">
           <a class="btn" data-game-link href="#" target="_blank" rel="noopener">Play qw3rty</a>
           <a class="btn" href="#about">Learn more</a>
@@ -50,37 +50,44 @@
         <div class="about-blocks">
           <div class="stack">
             <h3>Background and motivation</h3>
-            <p>Math fact fluency, the ability to recall basic facts such as multiplication and division quickly and accurately, is a building block for the multi-digit arithmetic, fractions, and problem solving that 4th graders take on. Building that fluency takes regular practice, but traditional drills like flash cards and worksheets can feel repetitive, and students often lose interest before the facts become automatic. At the same time, more and more classwork happens on computers, so typing is becoming an everyday skill that young students rarely get a chance to practice on purpose. qw3rty brings these two needs together: it turns math fact practice into a fast-paced typing race, so students build arithmetic recall and keyboard skills in the same activity, and they want to keep playing.</p>
+            <p>Math fact fluency, the ability to recall facts such as multiplication and division quickly and accurately, is a building block for the multi-digit arithmetic, fractions, and measurement that 4th graders take on. Building that fluency takes regular practice, but traditional drills like flash cards and worksheets can feel repetitive, and students often lose interest before the facts become automatic. At the same time, more and more classwork happens on computers, so typing is becoming an everyday skill that young students rarely get a chance to practice on purpose. qw3rty brings these two needs together: it turns math practice into a timed typing race, so students build arithmetic recall and keyboard skills in the same activity, and have a reason to play again to beat their best time.</p>
           </div>
           <div class="stack">
             <h3>Who it's for</h3>
-            <p>qw3rty is designed for 4th grade students in Massachusetts, along with the teachers who want an engaging way to reinforce math facts in class or at home. Its content is guided by the grade 4 standards in the Massachusetts Curriculum Framework for Mathematics.</p>
+            <p>qw3rty is designed for 4th grade students in Massachusetts, along with the teachers who want an engaging way to reinforce math skills in class or at home. Its problems follow the grade 4 standards in the 2017 Massachusetts Curriculum Framework for Mathematics.</p>
+          </div>
+          <div class="stack">
+            <h3>What the math covers</h3>
+            <p>Prompts come from three areas of the grade 4 standards: addition, subtraction, multiplication, and division with whole numbers up to 1,000,000; equivalent fractions and adding and subtracting fractions with denominators of 2, 3, 4, 5, 6, 8, 10, 12, and 100; and converting between imperial units such as feet, inches, and yards. Every problem has a whole-number or fraction answer that is never negative, and division problems always divide evenly.</p>
           </div>
           <div class="stack">
             <h3>How it works</h3>
-            <p>Players join a race and are shown a series of math problems. To move their racer forward, they type the correct answer as quickly as they can. Accurate, quick answers push a player ahead, so success depends on knowing the facts and typing them efficiently. The game runs in a web browser and is built with Vite and React.</p>
+            <p>A race is 10 math prompts long, and the timer starts as soon as the first prompt appears. Each prompt is shown in light gray with a question mark in place of the answer, for example 10 + 10 = ?. The player types the prompt exactly as shown, then types their answer, entering fractions as a/b, and presses Enter to submit.</p>
+            <p>Mistakes are shown right away. A mistyped character turns red and is underlined, and the player must fix it with Backspace before they can keep typing. A wrong answer is also marked in red, and the player edits it and submits again. The timer keeps running while they make corrections, so accuracy matters as much as speed. A progress indicator and the elapsed time stay on screen for the whole race.</p>
+            <p>After the 10th correct answer, the results screen shows the player's total time, how many typing mistakes they made, and how many wrong answers they submitted. The five best times are shown on the main menu and results screen, so students can keep trying to beat their record.</p>
+            <p>qw3rty runs in a web browser, is built with Vite and React, and can be played entirely with a keyboard. There are no accounts to create and no personal information to enter, and the game uses no analytics, cookies, or third-party scripts.</p>
           </div>
         </div>
         <ul class="card-grid" aria-label="Project highlights">
           <li class="card">
             <span class="highlight-icon" aria-hidden="true">÷</span>
-            <strong class="card-title">Math fact fluency</strong>
-            <p>Practice that is aligned with grade 4 standards</p>
+            <strong class="card-title">Grade 4 math</strong>
+            <p>Whole numbers, fractions, and unit conversions from the Massachusetts standards</p>
           </li>
           <li class="card">
             <span class="highlight-icon" aria-hidden="true">abc</span>
             <strong class="card-title">Typing skills</strong>
-            <p>Keyboard practice built into every round</p>
+            <p>Every prompt is typed out exactly, with mistakes fixed as you go</p>
           </li>
           <li class="card">
             <span class="highlight-icon" aria-hidden="true">1st</span>
-            <strong class="card-title">Friendly competition</strong>
-            <p>Racing keeps practice motivating</p>
+            <strong class="card-title">Beat your best time</strong>
+            <p>Your top five times are shown after every race</p>
           </li>
           <li class="card">
-            <span class="highlight-icon" aria-hidden="true">www</span>
-            <strong class="card-title">Runs in the browser</strong>
-            <p>Built with Vite and React, with nothing to install</p>
+            <span class="highlight-icon" aria-hidden="true">✓</span>
+            <strong class="card-title">Safe to play</strong>
+            <p>No accounts, no personal information, and no tracking</p>
           </li>
         </ul>
       </div>
@@ -150,32 +157,34 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row" data-label="Assignment">Assignment 1</th>
-                <td data-label="Description"><span class="placeholder">Description coming soon</span></td>
-                <td data-label="Status"><span class="badge badge-soon">Coming soon</span></td>
-                <!-- When ready: <a class="btn" href="docs/assignment-1.pdf" target="_blank" rel="noopener">View PDF</a> -->
-                <td data-label="Document"><a class="btn" aria-disabled="true">View PDF</a></td>
+                <th scope="row" data-label="Assignment">Project Requirements</th>
+                <td data-label="Description">The requirements for the game: setup, prompt content, typing and answering, error feedback, and timing</td>
+                <td data-label="Status"><span class="badge badge-live">Available</span></td>
+                <td data-label="Document"><a class="btn" href="docs/project-requirements.pdf" target="_blank" rel="noopener">View PDF</a></td>
               </tr>
               <tr>
-                <th scope="row" data-label="Assignment">Assignment 2</th>
-                <td data-label="Description"><span class="placeholder">Description coming soon</span></td>
-                <td data-label="Status"><span class="badge badge-soon">Coming soon</span></td>
-                <!-- When ready: <a class="btn" href="docs/assignment-2.pdf" target="_blank" rel="noopener">View PDF</a> -->
-                <td data-label="Document"><a class="btn" aria-disabled="true">View PDF</a></td>
+                <th scope="row" data-label="Assignment">Use Case Diagram</th>
+                <td data-label="Description">How a player interacts with the game, from the main menu through starting, playing, and finishing a race</td>
+                <td data-label="Status"><span class="badge badge-live">Available</span></td>
+                <td data-label="Document"><a class="btn" href="docs/use-case-diagram.png" target="_blank" rel="noopener">View image</a></td>
               </tr>
               <tr>
-                <th scope="row" data-label="Assignment">Assignment 3</th>
-                <td data-label="Description"><span class="placeholder">Description coming soon</span></td>
-                <td data-label="Status"><span class="badge badge-soon">Coming soon</span></td>
-                <!-- When ready: <a class="btn" href="docs/assignment-3.pdf" target="_blank" rel="noopener">View PDF</a> -->
-                <td data-label="Document"><a class="btn" aria-disabled="true">View PDF</a></td>
+                <th scope="row" data-label="Assignment">Class Diagram</th>
+                <td data-label="Description">The React components, hooks, and classes that make up the game, and how they connect</td>
+                <td data-label="Status"><span class="badge badge-live">Available</span></td>
+                <td data-label="Document"><a class="btn" href="docs/class-diagram.png" target="_blank" rel="noopener">View image</a></td>
               </tr>
               <tr>
-                <th scope="row" data-label="Assignment">Assignment 4</th>
-                <td data-label="Description"><span class="placeholder">Description coming soon</span></td>
-                <td data-label="Status"><span class="badge badge-soon">Coming soon</span></td>
-                <!-- When ready: <a class="btn" href="docs/assignment-4.pdf" target="_blank" rel="noopener">View PDF</a> -->
-                <td data-label="Document"><a class="btn" aria-disabled="true">View PDF</a></td>
+                <th scope="row" data-label="Assignment">Sequence Diagram 1</th>
+                <td data-label="Description">Starting and playing a race, including typing feedback and answer checking</td>
+                <td data-label="Status"><span class="badge badge-live">Available</span></td>
+                <td data-label="Document"><a class="btn" href="docs/sequence-diagram-1.png" target="_blank" rel="noopener">View image</a></td>
+              </tr>
+              <tr>
+                <th scope="row" data-label="Assignment">Sequence Diagram 2</th>
+                <td data-label="Description">Finishing a race, recording best times, and choosing to replay or return to the main menu</td>
+                <td data-label="Status"><span class="badge badge-live">Available</span></td>
+                <td data-label="Document"><a class="btn" href="docs/sequence-diagram-2.png" target="_blank" rel="noopener">View image</a></td>
               </tr>
             </tbody>
           </table>
@@ -197,35 +206,44 @@
             <h3 class="card-title">Charles Sparrow</h3>
             <p class="member-role">Project Manager</p>
             <ul class="member-contact">
-              <li><a href="https://www.linkedin.com/in/charlie-sparrow-95700329b" target="_blank" rel="noopener">LinkedIn</a></li>
               <li><span class="placeholder">cpsparrow525@gmail.com</span></li>
+              <li><a href="https://www.linkedin.com/in/charlie-sparrow-95700329b" target="_blank" rel="noopener">LinkedIn</a></li>
             </ul>
           </li>
           <li class="card member">
-            <img class="member-photo" src="images/team/placeholder-avatar.svg" alt="Placeholder avatar for Team Member 2" width="160" height="160">
-            <h3 class="card-title"><span class="placeholder">Team Member 2</span></h3>
-            <p class="member-role"><span class="placeholder">Role coming soon</span></p>
+            <img class="member-photo" src="images/team/RowanProfilePic.jpg" alt="Picture of Rowan Sharwood" width="160" height="160">
+            <h3 class="card-title">Rowan Sharwood</h3>
+            <p class="member-role">Backend Developer and Project Coordinator</p>
             <ul class="member-contact">
               <li><span class="placeholder">Email coming soon</span></li>
-              <li><span class="placeholder">GitHub or LinkedIn coming soon</span></li>
+              <li><a href="https://www.linkedin.com/in/rowan-sharwood-131b2329b/" target="_blank" rel="noopener">LinkedIn</a></li>
             </ul>
           </li>
           <li class="card member">
-            <img class="member-photo" src="images/team/placeholder-avatar.svg" alt="Placeholder avatar for Team Member 3" width="160" height="160">
-            <h3 class="card-title"><span class="placeholder">Team Member 3</span></h3>
-            <p class="member-role"><span class="placeholder">Role coming soon</span></p>
+            <img class="member-photo" src="images/team/escanderProfilePic.jpg" alt="Picture of Escander Habda" width="160" height="160">
+            <h3 class="card-title">Escander Habda</h3>
+            <p class="member-role">Backend Developer and Researcher</p>
             <ul class="member-contact">
               <li><span class="placeholder">Email coming soon</span></li>
-              <li><span class="placeholder">GitHub or LinkedIn coming soon</span></li>
+              <li><a href="https://www.linkedin.com/in/escander-habda-32b052354/" target="_blank" rel="noopener">LinkedIn</a></li>
             </ul>
           </li>
           <li class="card member">
-            <img class="member-photo" src="images/team/placeholder-avatar.svg" alt="Placeholder avatar for Team Member 4" width="160" height="160">
-            <h3 class="card-title"><span class="placeholder">Team Member 4</span></h3>
-            <p class="member-role"><span class="placeholder">Role coming soon</span></p>
+            <img class="member-photo" src="images/team/mayneProfilePic.jpg" alt="Picture of Mayne Murray" width="160" height="160">
+            <h3 class="card-title">Mayne Murray</h3>
+            <p class="member-role">Frontend Developer</p>
             <ul class="member-contact">
               <li><span class="placeholder">Email coming soon</span></li>
-              <li><span class="placeholder">GitHub or LinkedIn coming soon</span></li>
+              <li><a href="https://www.linkedin.com/in/mayne-murray/" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+          </li>
+          <li class="card member">
+            <img class="member-photo" src="images/team/marvensProfilePic.jpg" alt="Picture of Marvens Barthelemy" width="160" height="160">
+            <h3 class="card-title">Marvens Barthelemy</h3>
+            <p class="member-role">Frontend Developer</p>
+            <ul class="member-contact">
+              <li><span class="placeholder">Email coming soon</span></li>
+              <li><a href="https://www.linkedin.com/in/marvens-barthelemy-2b80042b3/" target="_blank" rel="noopener">LinkedIn</a></li>
             </ul>
           </li>
         </ul>

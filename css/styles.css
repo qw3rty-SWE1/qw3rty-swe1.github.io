@@ -35,6 +35,7 @@
   /* Layout */
   --page-width: 1126px;
   --content-width: 760px;
+  --table-width: 1040px;
   --radius: 10px;
   --radius-pill: 20px;
   --space: 24px;
@@ -441,6 +442,13 @@ img { max-width: 100%; height: auto; display: block; }
   overflow: hidden;
 }
 
+/* Tables break out of the text column so wide content has room.
+   align-self: center lets the extra width spill evenly on both sides. */
+.container > .table-wrap {
+  width: min(var(--table-width), calc(100vw - 2 * var(--gutter)));
+  align-self: center;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -462,9 +470,10 @@ img { max-width: 100%; height: auto; display: block; }
 /* Buttons inside table cells keep the button style but drop the minimum width */
 .table .btn { min-width: 0; white-space: nowrap; }
 .table tbody th { white-space: nowrap; }
+.table td[data-label="Description"] { width: 50%; }
 
-/* Stack rows on small screens */
-@media (max-width: 640px) {
+/* Stack rows on small and medium screens */
+@media (max-width: 900px) {
   .table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   .table tr {
     display: flex;
