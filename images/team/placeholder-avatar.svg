@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Placeholder avatar">
+  <style>
+    .bg { fill: #ffffff; } .fg { fill: #e5e4e7; }
+    @media (prefers-color-scheme: dark) { .bg { fill: #16171d; } .fg { fill: #2e303a; } }
+  </style>
+  <rect class="bg" width="160" height="160"/>
+  <circle class="fg" cx="80" cy="62" r="28"/>
+  <path class="fg" d="M28 160c0-32 23-52 52-52s52 20 52 52z"/>
+</svg>

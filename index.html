@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>qw3rty | Software Engineering Course Project</title>
+  <meta name="description" content="qw3rty is a typeracing-style math game for Massachusetts 4th graders. This site covers the project's background, deliverables, assignments, and team.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav-brand" href="#top">qw3rty</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="visually-hidden">Toggle menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#deliverables">Deliverables</a></li>
+        <li><a href="#assignments">Assignments</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- 1. HERO -->
+    <section class="section hero" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="eyebrow">A Software Engineering Course Project</p>
+        <h1 id="hero-title" class="hero-title">qw3rty</h1>
+        <p class="hero-tagline">Race your friends by typing your way through math facts.</p>
+        <div class="menu">
+          <a class="btn" data-game-link href="#" target="_blank" rel="noopener">Play qw3rty</a>
+          <a class="btn" href="#about">Learn more</a>
+        </div>
+        <p data-game-pending hidden>The game link is coming soon.</p>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">About the Project</h2>
+        <div class="about-blocks">
+          <div class="stack">
+            <h3>Background and motivation</h3>
+            <p>Math fact fluency, the ability to recall basic facts such as multiplication and division quickly and accurately, is a building block for the multi-digit arithmetic, fractions, and problem solving that 4th graders take on. Building that fluency takes regular practice, but traditional drills like flash cards and worksheets can feel repetitive, and students often lose interest before the facts become automatic. At the same time, more and more classwork happens on computers, so typing is becoming an everyday skill that young students rarely get a chance to practice on purpose. qw3rty brings these two needs together: it turns math fact practice into a fast-paced typing race, so students build arithmetic recall and keyboard skills in the same activity, and they want to keep playing.</p>
+          </div>
+          <div class="stack">
+            <h3>Who it's for</h3>
+            <p>qw3rty is designed for 4th grade students in Massachusetts, along with the teachers who want an engaging way to reinforce math facts in class or at home. Its content is guided by the grade 4 standards in the Massachusetts Curriculum Framework for Mathematics.</p>
+          </div>
+          <div class="stack">
+            <h3>How it works</h3>
+            <p>Players join a race and are shown a series of math problems. To move their racer forward, they type the correct answer as quickly as they can. Accurate, quick answers push a player ahead, so success depends on knowing the facts and typing them efficiently. The game runs in a web browser and is built with Vite and React.</p>
+          </div>
+        </div>
+        <ul class="card-grid" aria-label="Project highlights">
+          <li class="card">
+            <span class="highlight-icon" aria-hidden="true">÷</span>
+            <strong class="card-title">Math fact fluency</strong>
+            <p>Practice that is aligned with grade 4 standards</p>
+          </li>
+          <li class="card">
+            <span class="highlight-icon" aria-hidden="true">abc</span>
+            <strong class="card-title">Typing skills</strong>
+            <p>Keyboard practice built into every round</p>
+          </li>
+          <li class="card">
+            <span class="highlight-icon" aria-hidden="true">1st</span>
+            <strong class="card-title">Friendly competition</strong>
+            <p>Racing keeps practice motivating</p>
+          </li>
+          <li class="card">
+            <span class="highlight-icon" aria-hidden="true">www</span>
+            <strong class="card-title">Runs in the browser</strong>
+            <p>Built with Vite and React, with nothing to install</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. DELIVERABLES -->
+    <section class="section" id="deliverables" aria-labelledby="deliverables-title">
+      <div class="container">
+        <h2 id="deliverables-title">Deliverables</h2>
+        <p>The major milestones of the project. Each item can be viewed or downloaded when it is ready.</p>
+
+        <ul class="card-grid">
+          <li class="card deliverable">
+            <h3 class="card-title">Prototype</h3>
+            <span class="badge badge-live" data-game-badge>Live</span>
+            <p>A working, playable version of qw3rty that runs in the browser.</p>
+            <a class="btn" data-game-link href="#" target="_blank" rel="noopener">Play the prototype</a>
+          </li>
+
+          <li class="card deliverable">
+            <h3 class="card-title">SRS</h3>
+            <span class="badge badge-soon">Coming soon</span>
+            <p>The Software Requirements Specification, which describes what qw3rty does and the requirements it must meet.</p>
+            <!-- When ready, replace the next line with:
+                 <a class="btn" href="docs/srs.pdf" target="_blank" rel="noopener">View SRS (PDF)</a> -->
+            <a class="btn" aria-disabled="true">View SRS (PDF)</a>
+          </li>
+
+          <li class="card deliverable">
+            <h3 class="card-title">Presentation Notes</h3>
+            <span class="badge badge-soon">Coming soon</span>
+            <p>Speaker notes and supporting material for our project presentation.</p>
+            <!-- When ready, replace the next line with:
+                 <a class="btn" href="docs/presentation-notes.pdf" target="_blank" rel="noopener">View notes (PDF)</a> -->
+            <a class="btn" aria-disabled="true">View notes (PDF)</a>
+          </li>
+
+          <li class="card deliverable">
+            <h3 class="card-title">Demo Video</h3>
+            <span class="badge badge-soon">Coming soon</span>
+            <p>A short walkthrough video showing qw3rty in action.</p>
+            <!-- When ready, replace the next line with:
+                 <a class="btn" href="docs/demo-video.mp4" target="_blank" rel="noopener">Watch demo</a>
+                 (or point href at a YouTube or other video URL) -->
+            <a class="btn" aria-disabled="true">Watch demo</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. ASSIGNMENTS -->
+    <section class="section" id="assignments" aria-labelledby="assignments-title">
+      <div class="container">
+        <h2 id="assignments-title">Assignments</h2>
+        <p>Intermediate assignments completed during the course.</p>
+
+        <div class="table-wrap">
+          <table class="table">
+            <caption class="visually-hidden">Course assignments and their documents</caption>
+            <thead>
+              <tr>
+                <th scope="col">Assignment</th>
+                <th scope="col">Description</th>
+                <th scope="col">Status</th>
+                <th scope="col">Document</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" data-label="Assignment">Assignment 1</th>
+                <td data-label="Description"><span class="placeholder">Description coming soon</span></td>
+                <td data-label="Status"><span class="badge badge-soon">Coming soon</span></td>
+                <!-- When ready: <a class="btn" href="docs/assignment-1.pdf" target="_blank" rel="noopener">View PDF</a> -->
+                <td data-label="Document"><a class="btn" aria-disabled="true">View PDF</a></td>
+              </tr>
+              <tr>
+                <th scope="row" data-label="Assignment">Assignment 2</th>
+                <td data-label="Description"><span class="placeholder">Description coming soon</span></td>
+                <td data-label="Status"><span class="badge badge-soon">Coming soon</span></td>
+                <!-- When ready: <a class="btn" href="docs/assignment-2.pdf" target="_blank" rel="noopener">View PDF</a> -->
+                <td data-label="Document"><a class="btn" aria-disabled="true">View PDF</a></td>
+              </tr>
+              <tr>
+                <th scope="row" data-label="Assignment">Assignment 3</th>
+                <td data-label="Description"><span class="placeholder">Description coming soon</span></td>
+                <td data-label="Status"><span class="badge badge-soon">Coming soon</span></td>
+                <!-- When ready: <a class="btn" href="docs/assignment-3.pdf" target="_blank" rel="noopener">View PDF</a> -->
+                <td data-label="Document"><a class="btn" aria-disabled="true">View PDF</a></td>
+              </tr>
+              <tr>
+                <th scope="row" data-label="Assignment">Assignment 4</th>
+                <td data-label="Description"><span class="placeholder">Description coming soon</span></td>
+                <td data-label="Status"><span class="badge badge-soon">Coming soon</span></td>
+                <!-- When ready: <a class="btn" href="docs/assignment-4.pdf" target="_blank" rel="noopener">View PDF</a> -->
+                <td data-label="Document"><a class="btn" aria-disabled="true">View PDF</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. TEAM -->
+    <section class="section" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <h2 id="team-title">Meet the Team</h2>
+        <p>The people building qw3rty.</p>
+
+        <!-- Copy one <li class="card member"> block per team member.
+             Replace the photo with images/team/firstname-lastname.jpg and update the alt text. -->
+        <ul class="card-grid">
+          <li class="card member">
+            <img class="member-photo" src="images/team/charlesHeadshot.jpeg" alt="Picture of Charles Sparrow" width="160" height="160">
+            <h3 class="card-title">Charles Sparrow</h3>
+            <p class="member-role">Project Manager</p>
+            <ul class="member-contact">
+              <li><a href="https://www.linkedin.com/in/charlie-sparrow-95700329b" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><span class="placeholder">cpsparrow525@gmail.com</span></li>
+            </ul>
+          </li>
+          <li class="card member">
+            <img class="member-photo" src="images/team/placeholder-avatar.svg" alt="Placeholder avatar for Team Member 2" width="160" height="160">
+            <h3 class="card-title"><span class="placeholder">Team Member 2</span></h3>
+            <p class="member-role"><span class="placeholder">Role coming soon</span></p>
+            <ul class="member-contact">
+              <li><span class="placeholder">Email coming soon</span></li>
+              <li><span class="placeholder">GitHub or LinkedIn coming soon</span></li>
+            </ul>
+          </li>
+          <li class="card member">
+            <img class="member-photo" src="images/team/placeholder-avatar.svg" alt="Placeholder avatar for Team Member 3" width="160" height="160">
+            <h3 class="card-title"><span class="placeholder">Team Member 3</span></h3>
+            <p class="member-role"><span class="placeholder">Role coming soon</span></p>
+            <ul class="member-contact">
+              <li><span class="placeholder">Email coming soon</span></li>
+              <li><span class="placeholder">GitHub or LinkedIn coming soon</span></li>
+            </ul>
+          </li>
+          <li class="card member">
+            <img class="member-photo" src="images/team/placeholder-avatar.svg" alt="Placeholder avatar for Team Member 4" width="160" height="160">
+            <h3 class="card-title"><span class="placeholder">Team Member 4</span></h3>
+            <p class="member-role"><span class="placeholder">Role coming soon</span></p>
+            <ul class="member-contact">
+              <li><span class="placeholder">Email coming soon</span></li>
+              <li><span class="placeholder">GitHub or LinkedIn coming soon</span></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Example of a completed member card:
+          <li class="card member">
+            <img class="member-photo" src="images/team/jane-doe.jpg" alt="Portrait of Jane Doe" width="160" height="160">
+            <h3 class="card-title">Jane Doe</h3>
+            <p class="member-role">Frontend Developer</p>
+            <ul class="member-contact">
+              <li><a href="mailto:jane@example.edu">jane@example.edu</a></li>
+              <li><a href="https://github.com/janedoe" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </li>
+        -->
+      </div>
+    </section>
+
+    <!-- 6. REFERENCES -->
+    <section class="section" id="references" aria-labelledby="references-title">
+      <div class="container">
+        <h2 id="references-title">References and Bibliography</h2>
+        <p>The tools, standards, and background research behind qw3rty.</p>
+
+        <div class="ref-groups">
+          <div class="panel">
+            <h3>Technology</h3>
+            <ul class="ref-list">
+              <li>
+                <a href="https://vite.dev/" target="_blank" rel="noopener">Vite: Next Generation Frontend Tooling</a>.
+                The official Vite website and documentation.
+              </li>
+              <li>
+                <a href="https://react.dev/" target="_blank" rel="noopener">React</a>.
+                The official React website and documentation.
+              </li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Standards</h3>
+            <ul class="ref-list">
+              <li>
+                Massachusetts Department of Elementary and Secondary Education.
+                <a href="https://www.doe.mass.edu/frameworks/math/2017-06.pdf" target="_blank" rel="noopener">2017 Massachusetts Curriculum Framework for Mathematics (PDF)</a>.
+                See the grade 4 standards.
+              </li>
+              <li>
+                Massachusetts Department of Elementary and Secondary Education.
+                <a href="https://www.doe.mass.edu/frameworks/current.html" target="_blank" rel="noopener">Current Curriculum Frameworks</a>.
+              </li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Background Research</h3>
+            <ul class="ref-list">
+              <li><span class="placeholder">Coming soon: research on math fact fluency</span></li>
+              <li><span class="placeholder">Coming soon: research on typing instruction for elementary students</span></li>
+              <li><span class="placeholder">Coming soon: research on game-based learning</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">qw3rty</p>
+      <p>
+        <span class="placeholder">Software Engineering I</span>
+        <span aria-hidden="true">·</span>
+        Fall 2026
+      </p>
+      <p>
+        <a href="https://github.com/qw3rty-SWE1" target="_blank" rel="noopener">qw3rty-SWE1 on GitHub</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
