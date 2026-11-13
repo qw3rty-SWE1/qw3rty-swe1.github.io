@@ -33,7 +33,6 @@
   --btn-tracking: 0.5px;
 
   /* Layout */
-  --page-width: 1126px;
   --content-width: 760px;
   --table-width: 1040px;
   --radius: 10px;
@@ -44,7 +43,6 @@
   --space-lg: 64px;
   --gutter: 16px;
   --border-w: 3px;
-  --edge-w: 1px;
   --outline-w: 2px;
   --nav-height: 72px;
 
@@ -97,12 +95,8 @@ html { scroll-behavior: smooth; }
 }
 
 body {
-  width: var(--page-width);
-  max-width: 100%;
   min-height: 100svh;
-  margin: 0 auto;
-  border-left: var(--edge-w) solid var(--border);
-  border-right: var(--edge-w) solid var(--border);
+  margin: 0;
   background: var(--bg);
   text-align: center;
 }
